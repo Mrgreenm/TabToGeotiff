@@ -1,0 +1,15 @@
+!table
+!version; 300;
+!charset WindowsCyrillic
+
+Definition Table
+  File "42_52_а-а.tif"
+  Type "RASTER"
+  (2300000,541427.7) (0,0) Label "Точка 1",
+  (2308443.9,541427.7) (3989,0) Label "Точка 2",
+  (2308443.9,532146.7) (3989,4385) Label "Точка 3",
+  (2300000,532146.7) (0,4385) Label "Точка 4"
+  CoordSys NonEarth Units "m"
+  Units "m"
+  RasterStyle 4 1
+  RasterStyle 7 16777215
