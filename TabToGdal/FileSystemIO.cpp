@@ -108,6 +108,7 @@ FileSystemIO::~FileSystemIO()
 
 	 bfs::directory_iterator end_iter;
 	 std::string localStr = fileName+".tab" ;
+	 std::string localStr1 = fileName + ".TAB";
 	 for (bfs::directory_iterator file_itr(localPath); file_itr != end_iter; ++file_itr)
 	 {
 		 try
@@ -120,6 +121,10 @@ FileSystemIO::~FileSystemIO()
 				 if (file_itr->path().filename().string().find(localStr) != std::string::npos)
 				 {
 					return file_itr->path().filename().string();
+				 }
+				 if (file_itr->path().filename().string().find(localStr1) != std::string::npos)
+				 {
+					 return file_itr->path().filename().string();
 				 }
 
 			 }

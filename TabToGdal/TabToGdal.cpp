@@ -4,7 +4,7 @@
 #include "Menu.h"
 #include <string>
 
-const std :: string PROGRAM_VERSION = "0.2.1";
+const std :: string PROGRAM_VERSION = "0.2.2";
 
 int main()
 {
