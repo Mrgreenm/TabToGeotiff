@@ -1,3 +1,4 @@
+//Menu
 #pragma once
 #define BOOST_FILESYSTEM_NO_DEPRECATED
 #include "boost\filesystem.hpp" 
@@ -22,16 +23,16 @@ private:
 public:
 	bool ShowMenu = true;
 	
-	const std::vector<MenuHandle> hMainMenu = { {"Выберите действие", Header},
-												{"Все районы", DoAll},
-												{"Выбрать район", SelectDistrict},
-												{"Выход", Exit}
+	const std::vector<MenuHandle> hMainMenu = { {"Г‚Г»ГЎГҐГ°ГЁГІГҐ Г¤ГҐГ©Г±ГІГўГЁГҐ", Header},
+												{"Г‚Г±ГҐ Г°Г Г©Г®Г­Г»", DoAll},
+												{"Г‚Г»ГЎГ°Г ГІГј Г°Г Г©Г®Г­", SelectDistrict},
+												{"Г‚Г»ГµГ®Г¤", Exit}
 	};
-	std::vector<MenuHandle> hSelectZone = { {"Выберите зону", Header},
-												{"Зона 1", Zone1},
-												{"Зона 2", Zone2},
-												{"Зона 3", Zone3},
-												{"Назад", ToMainMenu}
+	std::vector<MenuHandle> hSelectZone = { {"Г‚Г»ГЎГҐГ°ГЁГІГҐ Г§Г®Г­Гі", Header},
+												{"Г‡Г®Г­Г  1", Zone1},
+												{"Г‡Г®Г­Г  2", Zone2},
+												{"Г‡Г®Г­Г  3", Zone3},
+												{"ГЌГ Г§Г Г¤", ToMainMenu}
 	};
 	
 
